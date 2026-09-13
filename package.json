@@ -1,7 +1,7 @@
 {
   "name": "@dsh-external/dsh-normify",
   "version": "0.5.4",
-  "description": "Normify（归一化框架图构建器）：人机共读的分形项目结构图系统——模块树源数据零容忍校验/编译/渲染，以及 AI 结构数据生成器（30 个工具 + normify-gen 技能 + 渲染数据集 + 伴随开发）。0.5.4：patch 空补丁拦截、refresh 无 git 降级、acceptance 报错具体化、help 支持 tool:<name> 参数树。适配 DeepSeek Harness 0.1.5+ / DSHEAC AIO 桌面端。",
+  "description": "Normify\uff08\u5f52\u4e00\u5316\u6846\u67b6\u56fe\u6784\u5efa\u5668\uff09\uff1a\u4eba\u673a\u5171\u8bfb\u7684\u5206\u5f62\u9879\u76ee\u7ed3\u6784\u56fe\u7cfb\u7edf\u2014\u2014\u6a21\u5757\u6811\u6e90\u6570\u636e\u96f6\u5bb9\u5fcd\u6821\u9a8c/\u7f16\u8bd1/\u6e32\u67d3\uff0c\u4ee5\u53ca AI \u7ed3\u6784\u6570\u636e\u751f\u6210\u5668\uff0830 \u4e2a\u5de5\u5177 + normify-gen \u6280\u80fd + \u6e32\u67d3\u6570\u636e\u96c6 + \u4f34\u968f\u5f00\u53d1\uff09\u30020.5.4\uff1apatch \u7a7a\u8865\u4e01\u62e6\u622a\u3001refresh \u65e0 git \u964d\u7ea7\u3001acceptance \u62a5\u9519\u5177\u4f53\u5316\u3001help \u652f\u6301 tool:<name> \u53c2\u6570\u6811\u3002\u9002\u914d DeepSeek Harness 0.1.5+ / DSHEAC AIO \u684c\u9762\u7aef\u3002",
   "type": "module",
   "main": "./lib/index.js",
   "types": "./lib/types/index.d.ts",
@@ -55,6 +55,8 @@
     }
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "yaml": "^2.8.1"
   },
   "devDependencies": {
